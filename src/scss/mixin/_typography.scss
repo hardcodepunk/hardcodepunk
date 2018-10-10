@@ -36,7 +36,6 @@
   font-size: 70px;
   margin-left: -5px;
   margin-bottom: 0.2em;
-  font-weight: bold;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
 }
@@ -44,7 +43,6 @@
 @mixin title-2 {
   margin: 0;
   font-size: 20px;
-  font-weight: bold;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
 }

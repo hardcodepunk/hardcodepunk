@@ -31,7 +31,7 @@
     text-transform: uppercase;
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
     &__text {
-      font-family: "Ray-Two";
+      font-family: 'ray-two';
     }
   }
 }
@@ -43,7 +43,7 @@
       flex-grow: 1;
       max-width: 100%;
       &__text {
-        font-family: "Ray-Two";
+        font-family: 'ray-two';
         font-size: 50px;
         line-height: 1.4em;
       }
@@ -56,6 +56,52 @@
       padding-top: 90px;
     }
     &__column--right {
+      position: relative;
       padding-top: 40px;
     }
+}
+
+/*
+ * Styling
+ */
+
+.textbox {
+  position: absolute;
+  border: 4px solid #000;
+  background: #fff;
+  font-family: 'ray-two';
+  font-size: 30px;
+  padding: 25px 20px 20px;
+  &:after {
+    position: absolute;
+    top: -14px;
+    left: 25px;
+    padding: 2px 11px 6px;
+    text-transform: uppercase;
+    font-family: 'Arame Bold', Futura, Trebuchet MS, Arial, sans-serif;
+    font-size: 17px;
+    color: #fff;
+    background: #000;
+    letter-spacing: 1px;
+  }
+  &__underscore {
+    opacity: 1;
+    animation: flicker 1s steps(1) infinite;
+  }
+}
+
+.textbox--hardcodepunk {
+  left: 220px;
+  top: 224px;
+  &:after {
+    content: 'Hardcodepunk';
+  }
+}
+
+.textbox--terminal {
+  left: 360px;
+  top: 70px;
+  &:after {
+    content: 'Terminal';
+  }
 }
