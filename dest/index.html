@@ -10,15 +10,41 @@
 </head>
 <body>
 <header class="header">
-  <h2>Frieder Jan Moerman</h2>
-  <h1>Hardcodepunk</h1>
-  <h3>&#91; Designer &#93;</h3><h3>&#91; Developer &#93;</h3>
+  <div class="wrapper">
+      <h2 class="header__sub-title">Frieder Jan Moerman</h2>
+      <h1 class="header__title">Hardcodepunk</h1>
+      <ul class="list list--horizontal">
+        <li class="list__item header__tag">&#91;<span class="header__tag__text"> Designer </span>&#93;</li>
+        <li class="list__item header__tag">&#91;<span class="header__tag__text"> Developer </span>&#93;</li>
+      </ul>
+  </div>
 </header>
-<section>
+<section class="introduction">
+  <div class="wrapper">
+    <div class="flex-container">
+      <div class="introduction__column introduction__column--left">
+        <p class="introduction__column__text">A digital nomad probably<br>out and about in a skatepark<br>near you.</p>
+      </div>
+      <div class="introduction__column introduction__column--right">
+        <img src="assets/img/portrait.gif" class="introduction__column__portrait"/>
+      </div>
+    </div>
+  </div>
 </section>
 <footer class="footer">
+
 </footer>
 <!-- Scripts -->
+<script type="text/javascript">
+    (function() {
+        var trial = document.createElement('script');
+        trial.type = 'text/javascript';
+        trial.async = true;
+        trial.src = 'https://easy.myfonts.net/v2/js?sid=130082(font-family=Arame+Regular)&sid=130087(font-family=Arame+Thin)&sid=225533(font-family=Arame+Bold)&key=g568tcMbY3';
+        var head = document.getElementsByTagName("head")[0];
+        head.appendChild(trial);
+    })();
+</script>
 <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -2,10 +2,60 @@
  * lay-out
  */
 
+.wrapper {
+  width: 100%;
+  padding: 0 50px 0 90px;
+}
+
+.list--horizontal {
+  .list__item {
+    display: inline-block;
+    margin-right: 24px;
+    margin-left: -3px;
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /*
  * components
  */
 
-/*
- * styling
- */
+.header {
+  padding-top: 140px;
+  &__tag {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    &__text {
+      font-family: "Ray-Two";
+    }
+  }
+}
+
+.introduction {
+  padding-bottom: 70px;
+    &__column {
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+      &__text {
+        font-family: "Ray-Two";
+        font-size: 50px;
+        line-height: 1.4em;
+      }
+      &__portrait {
+        height: 400px;
+      }
+    }
+    &__column--left {
+      width: 45%;
+      padding-top: 90px;
+    }
+    &__column--right {
+      padding-top: 40px;
+    }
+}
