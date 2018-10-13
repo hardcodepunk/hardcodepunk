@@ -61,6 +61,50 @@
     }
 }
 
+.profile {
+  background: #000;
+  &__characteristics {
+    padding: 140px 40px 136px 0;
+    position: relative;
+    &__img {
+      position: relative;
+      height: 273.5px;
+      width: 215px;
+      margin: 0 auto;
+      background: url("../img/portrait--silhouette.png") no-repeat;
+      @include image_2x("../img/portrait--silhouette@2x.png", 100%, 100%);
+      &__text {
+        position: absolute;
+        font-family: 'ray-two';
+        font-size: 24px;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        white-space: nowrap;
+        padding: 0 0 7px 30px;
+      }
+      &__text--mouth {
+        top: 10px;
+        left: 200px;
+      }
+      &__text--paw {
+        bottom: 36px;
+        left: 227px;
+      }
+      &__text--tail, &__text--head {
+        padding: 0 30px 7px 0;
+      }
+      &__text--tail {
+        top: 27px;
+        left: -360px;
+      }
+      &__text--head {
+        top: -40px;
+        left: -220px;
+      }
+    }
+  }
+}
+
 /*
  * Styling
  */
