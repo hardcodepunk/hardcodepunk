@@ -39,4 +39,30 @@ document.addEventListener('DOMContentLoaded',function(event){
   }
   // start the text animation
   StartTextAnimation(0);
+
+  /*
+   * toggle synopsis
+   */
+
+  var toggle = function (elem) {
+  	elem.classList.toggle('is-displayed');
+  };
+
+  // Listen for click events
+  document.addEventListener('click', function (event) {
+
+  	// Make sure clicked element is our toggle
+  	if (!event.target.classList.contains('js-toggle')) return;
+
+  	// Prevent default link behavior
+  	event.preventDefault();
+
+  	// Get the content
+  	var content = document.querySelector(event.target.hash);
+  	if (!content) return;
+
+  	// Toggle the content
+  	toggle(content);
+
+  }, false);
 });
