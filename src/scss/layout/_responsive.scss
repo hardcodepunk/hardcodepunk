@@ -1,0 +1,209 @@
+@media only screen and (max-width: 1400px) {
+  .introduction {
+    &__column--left {
+      flex-grow: initial;
+      flex-basis: content;
+      padding-top: 40px;
+      padding-right: 70px;
+    }
+    &__column--right {
+      padding-top: 0;
+    }
+  }
+  .exclamation {
+    font-size: 36px;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .textbox {
+    font-size: 24px;
+    padding: 19px 20px 14px;
+    &:after {
+      left: 19px;
+      font-size: 14px;
+    }
+  }
+  .textbox--terminal {
+    left: 370px;
+    top: 30px;
+  }
+  .textbox--hardcodepunk {
+    left: 230px;
+    top: 184px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .wrapper {
+    padding: 0 5%;
+  }
+  .introduction {
+    &__column__portrait {
+      height: 300px;
+    }
+    &__column--left {
+      padding-right: 140px;
+    }
+    .wrapper {
+      padding: 0 0 0 5%;
+    }
+  }
+  .header {
+    padding-top: 70px;
+  }
+  .exclamation {
+    font-size: 29px;
+  }
+  .textbox--terminal {
+    left: 270px;
+    top: 35px;
+  }
+  .textbox--hardcodepunk {
+    left: 172px;
+    top: 140px;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .introduction {
+    &__column__portrait {
+      height: 300px;
+    }
+    &__column--left {
+      padding-right: 70px;
+    }
+  }
+  .textbox {
+    font-size: 20px;
+    padding: 14px 17px 11px;
+    &:after {
+      top: -12px;
+      font-size: 12px;
+      padding: 2px 9px 6px;
+    }
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .introduction {
+    &__column--left {
+      padding-right: 40px;
+    }
+    .wrapper {
+      padding: 0 5%;
+    }
+  }
+  .exclamation {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .introduction {
+    &__column__portrait {
+      padding-left: 170px;
+    }
+  }
+  .introduction__column--left, .column {
+    flex-grow: 0;
+    flex-basis: 100%;
+  }
+  .textbox--hardcodepunk {
+    left: 340px;
+  }
+  .textbox--terminal {
+    left: 450px;
+  }
+  .exclamation {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .introduction {
+    &__column__portrait {
+      padding-left: 70px;
+    }
+  }
+  .textbox--hardcodepunk {
+    left: 240px;
+  }
+  .textbox--terminal {
+    left: 340px;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .introduction {
+    &__column__portrait {
+      padding-left: 0px;
+    }
+  }
+  .textbox--hardcodepunk {
+    left: 170px;
+  }
+  .textbox--terminal {
+    left: 270px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .header {
+    padding-top: 40px;
+    &__title {
+      font-size: 45px;
+    }
+    &__sub-title {
+      font-size: 17px;
+    }
+    .tag {
+      font-size: 20px;
+    }
+  }
+  .introduction {
+    padding-bottom: 70px;
+    &__column--left {
+      padding-top: 20px;
+    }
+  }
+  .list--horizontal .list__item {
+    margin-right: 0;
+  }
+  .exclamation {
+    font-size: 29px;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .textbox--terminal {
+    left: 210px;
+    top: 115px;
+  }
+  .textbox--hardcodepunk {
+    left: 110px;
+    top: 185px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .introduction {
+    padding-bottom: 100px;
+  }
+  .textbox--hardcodepunk {
+    left: 0;
+    top: 280px;
+  }
+  .textbox--terminal {
+    left: 120px;
+    top: 145px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .introduction {
+    &__column--left {
+      padding-right: 0;
+      padding-top: 20px;
+    }
+  }
+}

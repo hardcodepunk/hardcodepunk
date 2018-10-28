@@ -293,6 +293,16 @@
     font-size: 50px;
     text-transform: uppercase;
   }
+  .anchors {
+    &__anchor {
+      &:last-child {
+        margin-right: 0;
+      }
+      &:before {
+        filter: invert(1);
+      }
+    }
+  }
 }
 
 /*
