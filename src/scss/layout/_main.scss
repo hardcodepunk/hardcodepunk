@@ -43,11 +43,6 @@
       flex-basis: 0;
       flex-grow: 1;
       max-width: 100%;
-      &__text {
-        font-family: 'ray-two';
-        font-size: 50px;
-        line-height: 1.4em;
-      }
       &__portrait {
         height: 400px;
       }
@@ -76,7 +71,7 @@
       @include image_2x("../img/portrait--silhouette@2x.png", 100%, 100%);
       &__text {
         position: absolute;
-        font-family: 'ray-two';
+        font-family: 'Ray Two';
         font-size: 24px;
         color: #fff;
         border-bottom: 1px solid #fff;
@@ -141,7 +136,7 @@
   }
   &__skills {
     color: #fff;
-    font-family: 'ray-two';
+    font-family: 'Ray Two';
     font-size: 19px;
     &__skills-item {
       margin-bottom: 20px;
@@ -198,7 +193,7 @@
         }
         &:after {
           color: #fff;
-          font-family: 'ray-two';
+          font-family: 'Ray Two';
           font-size: 19px;
           @include translateY();
           left: 70px;
@@ -224,7 +219,7 @@
         }
       }
       &:not(:first-child) {
-        margin-left: -7px;
+        margin-left: -10px;
       }
       &:last-child {
         border: 1px solid #fff;
@@ -277,8 +272,9 @@
     margin-bottom: 80px;
     &__body {
       display: none;
-      font-family: 'ray-two';
-      margin-top: 25px;
+      font-family: 'Ray Two';
+      margin: 25px 0 23px;
+      max-width: 500px;
     }
   }
   .tag {
@@ -293,7 +289,7 @@
   background: #000;
   padding: 205px 0 300px;
   &__mail {
-    font-family: 'ray-two';
+    font-family: 'Ray Two';
     font-size: 50px;
     text-transform: uppercase;
   }
@@ -307,7 +303,7 @@
   position: absolute;
   border: 4px solid #000;
   background: #fff;
-  font-family: 'ray-two';
+  font-family: 'Ray Two';
   font-size: 30px;
   padding: 25px 20px 20px;
   &:after {
@@ -316,7 +312,7 @@
     left: 25px;
     padding: 2px 11px 6px;
     text-transform: uppercase;
-    font-family: 'Arame Bold', Futura, Trebuchet MS, Arial, sans-serif;
+    font-family: 'Arame Mono Bold', Futura, Trebuchet MS, Arial, sans-serif;
     font-size: 17px;
     color: #fff;
     background: #000;
@@ -350,16 +346,54 @@
   display: inline-block;
   margin-bottom: 0.2em;
   &__text {
-    font-family: 'ray-two';
+    font-family: 'Ray Two';
   }
 }
 
 .anchors {
-  margin-top: 40px;
+  margin-top: 17px;
   &__anchor {
+    position: relative;
     margin-right: 45px;
+    margin-left: 25px;
     text-transform: uppercase;
+    &:before {
+      content: "";
+      position: absolute;
+      height: 15px;
+      width: 15px;
+      left: -25px;
+      top: 4px;
+      background: url("../img/icon/arrow.svg") no-repeat;
+    }
+    &:hover {
+      &:before {
+        top: 7px;
+      }
+    }
   }
+  &__anchor--dynamic-arrow.is-active {
+    &:before {
+      transform: rotate(180deg);
+    }
+    &:hover {
+      &:before {
+        top: 1px;
+      }
+    }
+  }
+}
+
+.anchored-text {
+  padding: 0 2px;
+  background: #000;
+  color: #fff;
+}
+
+.exclamation {
+  font-family: 'Ray Two';
+  font-size: 50px;
+  line-height: 1.4em;
 }
 
 .skill-level-indicator {
@@ -384,5 +418,5 @@
 }
 
 .is-displayed {
-  display: block;
+  display: inline-block;
 }

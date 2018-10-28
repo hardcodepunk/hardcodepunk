@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded',function(event){
+  /*
+   * typewriter animation text script
+   */
+
   // array with texts to type in typewriter
   var sentenceHardcodepunk = ["Here to fuck some code up"];
   var sentenceTerminal = ["Design and destroy"];
@@ -41,7 +45,7 @@ document.addEventListener('DOMContentLoaded',function(event){
   StartTextAnimation(0);
 
   /*
-   * toggle synopsis
+   * toggle script
    */
 
   var toggle = function (elem) {
@@ -50,15 +54,24 @@ document.addEventListener('DOMContentLoaded',function(event){
 
   // Listen for click events
   document.addEventListener('click', function (event) {
+    var clickedElement = event.target;
 
   	// Make sure clicked element is our toggle
-  	if (!event.target.classList.contains('js-toggle')) return;
+  	if (!clickedElement.classList.contains('js-toggle')) return;
+
+    clickedElement.classList.toggle('is-active');
+
+    if (clickedElement.classList.contains('is-active')) {
+      clickedElement.innerHTML = "Hide synopsis";
+    } else {
+      clickedElement.innerHTML = "View synopsis";
+    }
 
   	// Prevent default link behavior
   	event.preventDefault();
 
   	// Get the content
-  	var content = document.querySelector(event.target.hash);
+  	var content = document.querySelector(clickedElement.hash);
   	if (!content) return;
 
   	// Toggle the content

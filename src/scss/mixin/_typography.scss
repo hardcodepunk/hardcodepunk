@@ -1,6 +1,6 @@
 /**
  * @license
- * MyFonts Webfont Build ID 3653018, 2018-10-09T06:59:40-0400
+ * MyFonts Webfont Build ID 3661644, 2018-10-28T07:20:35-0400
  *
  * The fonts listed in this notice are subject to the End User License
  * Agreement(s) entered into by the website owner. All other parties are
@@ -8,23 +8,26 @@
  *
  * You may obtain a valid license at the URLs below.
  *
+ * Webfont: 0Arame-Mono-Bold by DMTR.ORG
+ * URL: https://www.myfonts.com/fonts/dimitrelima/0arame/mono-bold/
+ * Copyright: Copyright &#x00A9; 2012 Dmtr.org, Dimitre Lima.&#x000D;All Rights Reserved. This font software may not be reproduced, modified, disclosed or transferred without the express written approval of&#x000D;Dmtr.org / Hitype.com / Dimitre Lima
+ *
  * Webfont: Ray-Two by Indian Type Foundry
  * URL: https://www.myfonts.com/fonts/indian-type-foundry/ray/two/
  * Copyright: Copyright (c) 2017 by Fontstore Pte Ltd. All rights reserved.
+ *
+ *
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3661644
  * Licensed pageviews: 10,000
- *
- *
- * License: https://www.myfonts.com/viewlicense?type=web&buildid=3653018
  *
  * © 2018 MyFonts Inc
 */
 
 
 /* @import must be at top of file, otherwise CSS will not work */
-@import url("//hello.myfonts.net/count/37bd9a");
-
-
-@font-face {font-family: 'Ray-Two';src: url('../fonts/37BD9A_0_0.eot');src: url('../fonts/37BD9A_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/37BD9A_0_0.woff2') format('woff2'),url('../fonts/37BD9A_0_0.woff') format('woff'),url('../fonts/37BD9A_0_0.ttf') format('truetype'),url('assets/fonts/37BD9A_0_0.svg#wf') format('svg');}
+@import url("//hello.myfonts.net/count/37df4c");
+@font-face {font-family: 'Arame Mono Bold';src: url('../fonts/37DF4C_0_0.eot');src: url('../fonts/37DF4C_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/37DF4C_0_0.woff2') format('woff2'),url('../fonts/37DF4C_0_0.woff') format('woff'),url('../fonts/37DF4C_0_0.ttf') format('truetype');}
+@font-face {font-family: 'Ray Two';src: url('../fonts/37DF4C_1_0.eot');src: url('../fonts/37DF4C_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/37DF4C_1_0.woff2') format('woff2'),url('../fonts/37DF4C_1_0.woff') format('woff'),url('../fonts/37DF4C_1_0.ttf') format('truetype');}
 
 
 // =============================================
@@ -33,15 +36,16 @@
 
 @mixin title-1 {
   margin: 0;
-  font-size: 70px;
-  margin-left: -5px;
+  margin-left: -3px;
   margin-bottom: 0.2em;
+  font-size: 70px;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
 }
 
 @mixin title-2 {
   margin: 0;
+  margin-left: -1px;
   font-size: 20px;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
@@ -65,8 +69,8 @@
 }
 
 @mixin title-5 {
-  margin: 0;
   font-size: 17px;
-  line-height: 1.75em;
+  line-height: 1.35em;
   text-rendering: optimizeLegibility;
+  margin-bottom: 0.7em;
 }
