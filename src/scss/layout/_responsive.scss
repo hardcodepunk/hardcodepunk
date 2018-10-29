@@ -13,6 +13,25 @@
   .exclamation {
     font-size: 36px;
   }
+  .profile {
+    .column {
+      flex-basis: auto;
+    }
+  }
+  .adventure-journal {
+    .flex-container {
+      margin: 0 -40px;
+    }
+    .column {
+      padding: 0 40px;
+      flex-grow: 0;
+      flex-basis: 100%;
+      max-width: 650px;
+    }
+  }
+  .anchors__anchor {
+    margin-right: 15px;
+  }
 }
 @media only screen and (max-width: 1250px) {
   .textbox {
@@ -31,6 +50,40 @@
     left: 230px;
     top: 184px;
   }
+  // profile
+  .profile {
+    padding-bottom: 200px;
+    &__tools {
+      &__tools-item {
+        width: 27%;
+        &__icon {
+          height: 16px;
+          width: 16px;
+          left: -8px;
+          top: -50px;
+          &:after {
+            font-size: 17px;
+            left: 40px;
+          }
+        }
+      }
+      &__source {
+        width: 16%;
+      }
+    }
+  }
+  .adventure-journal {
+    padding: 70px 0 110px;
+    .flex-container {
+      margin: 0;
+    }
+    .column {
+      padding: 0;
+    }
+  }
+  .footer {
+    padding: 130px 0 240px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .wrapper {
@@ -46,12 +99,12 @@
     &__column--left {
       padding-right: 140px;
     }
+    .exclamation {
+      font-size: 29px;
+    }
   }
   .header {
     padding-top: 70px;
-  }
-  .exclamation {
-    font-size: 29px;
   }
   .textbox--terminal {
     left: 270px;
@@ -68,13 +121,13 @@
       flex-basis: 50%;
     }
     .flex-container {
-
+      max-width: 800px;
     }
     .sub-flex-container {
       display: block;
-      justify-content: center;
     }
     &__characteristics {
+      padding: 200px 40px 136px 40px;
       &__profile-picture {
         width: 150px;
         &__text {
@@ -102,6 +155,9 @@
         }
       }
     }
+    &__fields {
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -123,6 +179,30 @@
       padding: 2px 9px 6px;
     }
   }
+  .profile {
+    &__tools {
+      &__tools-item {
+        &__icon {
+          &:after {
+            white-space: pre-wrap;
+          }
+        }
+        &__icon--js-task-runners {
+          &:after {
+            content: 'Javascript task runners';
+          }
+        }
+        &__icon--cms {
+          &:after {
+            content: 'Control management systems';
+          }
+        }
+      }
+      &__source {
+        width: 25%;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 960px) {
@@ -133,9 +213,20 @@
     .wrapper {
       padding: 0 5%;
     }
+    .exclamation {
+      font-size: 24px;
+    }
   }
-  .exclamation {
-    font-size: 24px;
+  .flex-container, .sub-flex-container {
+    justify-content: space-evenly;
+  }
+  .profile {
+    &__fields {
+      padding-right: 20px;
+    }
+    &__skills {
+      padding-left: 20px;
+    }
   }
 }
 
@@ -158,6 +249,7 @@
   .exclamation {
     font-size: 40px;
   }
+
 }
 
 @media only screen and (max-width: 740px) {
@@ -172,6 +264,84 @@
   .textbox--terminal {
     left: 340px;
   }
+  .profile {
+    &__tools {
+      &__tools-item {
+        display: block;
+        height: 110px;
+        width: 30%;
+        &__icon {
+          height: 16px;
+          width: 16px;
+          left: 120%;
+          top: -8px;
+          &:after {
+
+          }
+        }
+        &:not(:first-child) {
+          margin-left: 0;
+        }
+        &:last-child {
+          width: 30%;
+          height: 0;
+          border: 0;
+        }
+      }
+      &__source {
+        height: 70px;
+        width: 30%;
+      }
+    }
+    &__characteristics {
+      &__profile-picture {
+        margin: 0;
+        &__text--mouth, &__text--tail, &__text--paw, &__text--head {
+          left: 160px;
+          right: auto;
+        }
+        &__text--tail {
+          top: auto;
+          bottom: 100px;
+        }
+        &__text--left {
+          &:before {
+            transform: rotate(-45deg);
+            left: -34px;
+            right: auto;
+          }
+        }
+        &__text--head {
+          left: 120px;
+          top: -40px;
+          &:before {
+            width: 35px;
+            left: -29px;
+            bottom: -13px;
+          }
+        }
+        &__text--mouth {
+          left: 140px;
+          top: 3px;
+          &:before {
+            width: 58px;
+            left: -49px;
+            bottom: -21px;
+          }
+        }
+        &__text--tail {
+          left: 150px;
+          bottom: 117px;
+        }
+      }
+    }
+  }
+  .adventure-journal {
+    .anchors__anchor {
+      display: block;
+      margin-bottom: 1em;
+    }
+  }
 }
 
 @media only screen and (max-width: 590px) {
@@ -185,6 +355,14 @@
   }
   .textbox--terminal {
     left: 270px;
+  }
+  .footer {
+    &__mail {
+      font-size: 30px;
+    }
+    .anchors {
+      font-size: 12px;
+    }
   }
 }
 
@@ -214,6 +392,11 @@
     font-size: 29px;
     margin-bottom: 0;
   }
+  .profile {
+    &__characteristics {
+      padding-left: 0;
+    }
+  }
 }
 
 @media only screen and (max-width: 520px) {
@@ -225,11 +408,22 @@
     left: 110px;
     top: 185px;
   }
+  .flex-container, .sub-flex-container {
+    justify-content: flex-start;
+  }
+  .profile {
+    &__fields {
+      padding-right: 0;
+    }
+    &__fields, &__skills {
+      padding-left: 40px;
+    }
+  }
 }
 
 @media only screen and (max-width: 450px) {
   .introduction {
-    padding-bottom: 100px;
+    padding-bottom: 140px;
   }
   .textbox--hardcodepunk {
     left: 0;
@@ -239,6 +433,49 @@
     left: 120px;
     top: 145px;
   }
+  .profile {
+    &__characteristics {
+      padding-bottom: 70px;
+      &__profile-picture {
+        width: 100px;
+        &__text {
+          font-size: 15px;
+          padding: 0 0 7px 0;
+        }
+        &__text--tail {
+          left: 10px;
+          bottom: 196px;
+          &:before {
+            transform: rotate(-90deg);
+            left: -56px;
+            right: auto;
+            bottom: -57px;
+            width: 112px;
+          }
+        }
+        &__text--head {
+          left: 90px;
+          top: -45px;
+        }
+        &__text--mouth {
+          left: 100px;
+          top: 20px;
+        }
+        &__text--paw {
+          bottom: 27px;
+          left: 115px;
+        }
+      }
+    }
+  }
+  .adventure-journal {
+    &__title {
+      font-size: 45px;
+    }
+  }
+  .footer__mail {
+    font-size: 24px;
+  }
 }
 
 @media only screen and (max-width: 380px) {
@@ -247,5 +484,8 @@
       padding-right: 0;
       padding-top: 20px;
     }
+  }
+  .header__title {
+    font-size: 40px;
   }
 }

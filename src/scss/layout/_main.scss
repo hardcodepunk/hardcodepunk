@@ -65,6 +65,10 @@
 
 .profile {
   background: #000;
+  padding-bottom: 215px;
+  .sub-column {
+    max-width: 290px;
+  }
   &__characteristics {
     padding: 140px 40px 136px 0;
     position: relative;
@@ -151,7 +155,7 @@
   }
   &__tools {
     width: 100%;
-    margin: 180px 0 215px;
+    margin-top: 180px;
     padding-left: 85px;
     &__tools-item {
       display: inline-block;
@@ -160,7 +164,7 @@
       border-top: 0;
       border-right: 0;
       height: 55px;
-      width: 300px;
+      width: 30%;
       &__icon {
         background: url("../img/icon/versioning.svg") no-repeat;
         position: absolute;
@@ -235,7 +239,7 @@
       }
     }
     &__source {
-      width: 160px;
+      width: 16%;
       &__illustration {
         position: absolute;
         border-radius: 50%;
