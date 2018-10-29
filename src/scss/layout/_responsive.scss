@@ -37,14 +37,14 @@
     padding: 0 5%;
   }
   .introduction {
+    .wrapper {
+      padding: 0 0 0 5%;
+    }
     &__column__portrait {
       height: 300px;
     }
     &__column--left {
       padding-right: 140px;
-    }
-    .wrapper {
-      padding: 0 0 0 5%;
     }
   }
   .header {
@@ -60,6 +60,48 @@
   .textbox--hardcodepunk {
     left: 172px;
     top: 140px;
+  }
+
+  // profile
+  .profile {
+    .sub-column {
+      flex-basis: 50%;
+    }
+    .flex-container {
+
+    }
+    .sub-flex-container {
+      display: block;
+      justify-content: center;
+    }
+    &__characteristics {
+      &__profile-picture {
+        width: 150px;
+        &__text {
+          font-size: 17px;
+          padding: 0 0 7px 10px;
+        }
+        &__text--tail, &__text--head {
+          padding: 0 10px 7px 0;
+        }
+        &__text--mouth {
+          top: 0px;
+          left: 141px;
+        }
+        &__text--paw {
+          bottom: 30px;
+          left: 160px;
+        }
+        &__text--head {
+          top: -50px;
+          left: -150px;
+        }
+        &__text--tail {
+          top: 5px;
+          left: -270px;
+        }
+      }
+    }
   }
 }
 
