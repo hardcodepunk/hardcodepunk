@@ -1,8 +1,9 @@
 @media only screen and (max-width: 1400px) {
   .introduction {
+    .column {
+      flex-basis: 100%;
+    }
     &__column--left {
-      flex-grow: initial;
-      flex-basis: content;
       padding-top: 40px;
       padding-right: 70px;
     }
@@ -470,7 +471,7 @@
   }
   .adventure-journal {
     &__title {
-      font-size: 45px;
+      font-size: 40px;
     }
   }
   .footer__mail {
