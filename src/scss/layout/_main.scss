@@ -37,7 +37,7 @@
  */
 
 .header {
-  padding-top: 140px;
+  padding-top: 40px;
   .tag {
     font-size: 32px;
   }
@@ -165,7 +165,7 @@
       height: 55px;
       width: 30%;
       &__icon {
-        background: url("../img/icon/versioning.svg") no-repeat;
+        background: url("../img/icon/version-control.svg") no-repeat;
         position: absolute;
         height: 30px;
         width: 30px;
@@ -210,8 +210,8 @@
           white-space: nowrap;
         }
       }
-      &__icon--versioning {
-        background: url("../img/icon/versioning.svg") no-repeat;
+      &__icon--version-control {
+        background: url("../img/icon/version-control.svg") no-repeat;
         &:after {
           content: 'Version control';
         }
@@ -368,6 +368,68 @@
   &__text {
     font-family: 'Ray Two';
   }
+}
+
+.button {
+  text-transform: uppercase;
+  display: inline-block;
+  border: none;
+  background: none;
+  position: relative;
+  font-family: 'Arame Mono Bold', Futura, Trebuchet MS, Arial, sans-serif;;
+  font-size: 16px;
+  margin: 30px;
+  padding: 10px;
+  padding-left: 25px;
+  cursor: pointer;
+  &:before {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    left: 0;
+    top: 15px;
+    background: url("../img/icon/arrow.svg") no-repeat;
+  }
+  &:hover {
+    &:before {
+      top: 18px;
+    }
+  }
+  &__corner {
+    position: absolute;
+    border: 7px solid #000;
+    height: 14px;
+    width: 14px;
+  }
+  &__corner--left-up {
+    top: 0;
+    left: -14px;
+    border-right: 0;
+    border-bottom: 0;
+  }
+  &__corner--left-bottom {
+    bottom: -4px;
+    left: -14px;
+    border-right: 0;
+    border-top: 0;
+  }
+  &__corner--right-up {
+    top: 0;
+    right: -4px;
+    border-left: 0;
+    border-bottom: 0;
+  }
+  &__corner--right-bottom {
+    bottom: -4px;
+    right: -4px;
+    border-left: 0;
+    border-top: 0;
+  }
+}
+
+.call-to-action {
+  text-align: right;
 }
 
 .anchors {

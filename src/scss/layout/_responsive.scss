@@ -105,7 +105,7 @@
     }
   }
   .header {
-    padding-top: 70px;
+    padding-top: 0;
   }
   .textbox--terminal {
     left: 270px;
@@ -229,6 +229,9 @@
       padding-left: 20px;
     }
   }
+  .call-to-action {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 850px) {
@@ -250,7 +253,6 @@
   .exclamation {
     font-size: 40px;
   }
-
 }
 
 @media only screen and (max-width: 740px) {
@@ -369,7 +371,6 @@
 
 @media only screen and (max-width: 550px) {
   .header {
-    padding-top: 40px;
     &__title {
       font-size: 45px;
     }

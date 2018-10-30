@@ -1,14 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg enable-background="new 0 0 330 330" version="1.1" viewBox="0 0 330 330" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
 <style type="text/css">
 	.st0{fill:none;}
 	.st1{fill:none;stroke:#FFFFFF;stroke-width:44;stroke-linejoin:round;}
 </style>
-<path class="st0" d="M-80-80"/>
-<path class="st0" d="M-80-80"/>
-<path class="st1" d="M45,165C45,98.7,98.7,45,165,45 M285,165c0-66.3-53.7-120-120-120 M45,165c0,66.3,53.7,120,120,120
-	s120-53.7,120-120 M165,45L165,45L165,45V0 M255,90L255,90l45-30 M285,165L285,165h45 M165,285L165,285v45 M0,165L0,165h45 M45,285
-	L45,285l30-30 M285,285L285,285l-30-30 M75,75L75,75L45,45"/>
+<path class="st0" d="m-80-80"/>
+<path class="st0" d="m-80-80"/>
+<path class="st1" d="m45 165c0-66.3 53.7-120 120-120m120 120c0-66.3-53.7-120-120-120m-120 120c0 66.3 53.7 120 120 120s120-53.7 120-120m-120-120v-45m90 90l45-30m-15 105h45m-165 120v45m-165-165h45m0 120l30-30m210 30l-30-30m-180-180l-30-30"/>
 </svg>
